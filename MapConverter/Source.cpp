@@ -51,7 +51,7 @@ int main()
 			}
 			if( x != tileData.GetWidth() - 1 ) out << ',';
 		}
-		out << '\n';
+		if( y != tileData.GetHeight() - 1 ) out << '\n';
 	}
 
 	out.close();
